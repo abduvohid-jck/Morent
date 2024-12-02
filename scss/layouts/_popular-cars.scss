@@ -1,0 +1,134 @@
+.popular-cars {
+  padding-top: 36px;
+  padding-bottom: 32px;
+  background: #f6f7f9;
+  min-width: 470px;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+  &__title {
+    font-family: plusjakarta;
+    font-size: 16px;
+    font-weight: 600;
+    color: #90a3bf;
+  }
+  &__view-all-link {
+    font-family: plusjakarta;
+    font-size: 16px;
+    font-weight: 600;
+    color: #3563e9;
+  }
+  &__card {
+    padding: 24px 24px 24px 24px;
+    background: white;
+    border-radius: 10px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__card-top {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__card-title {
+    font-family: plusjakarta;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: #1a202c;
+  }
+  &__car-type {
+    font-family: plusjakarta;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #90a3bf;
+    margin-top: 4px;
+  }
+  &__car-image {
+    padding-top: 64px;
+    position: relative;
+    padding-bottom: 64px;
+    display: flex;
+    justify-content: center;
+  }
+  &__card-car-gradient {
+    position: absolute;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      #ffffff 100%
+    );
+    width: 100%;
+    height: 68px;
+    bottom: 37px;
+  }
+  &__informations {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  &__car-info {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: plusjakarta;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: #90a3bf;
+  }
+  &__payment {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  &__car-price {
+    font-family: plusjakarta;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25.2px;
+  }
+  &__car-price-span {
+    font-size: 14px;
+    line-height: 17.64px;
+    color: #90a3bf;
+  }
+  &__rent-button {
+    padding: 10px 20px;
+    font-family: plusjakarta;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    background: #3563e9;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid #3563e9;
+  }
+  &__discount {
+    font-family: plusjakarta;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.64px;
+    text-decoration-line: line-through;
+    color: #90A3BF;
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: 1440px){
+  .popular-cars{
+    &__mobile-hidden-cars{
+      display: none;
+    }
+    &__wrapper {
+      justify-content: center;
+    }
+  }
+}

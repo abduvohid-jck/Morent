@@ -1,0 +1,234 @@
+.hero {
+  background: #f6f7f9;
+  min-width: 470px;
+
+  &__filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  &__pick-up-filter {
+    background-color: white;
+    padding: 24px 31px 24px 48px;
+    border-radius: 10px;
+  }
+  &__pick-up-filter-input {
+    width: 150px;
+    align-items: center;
+    display: flex;
+    gap: 8px;
+  }
+  &__pick-up-filter-text-input{
+    width: 104px;
+      border: none;
+      outline: none;
+      font-family: plusjakarta;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+  }
+  &__pick-up-filter-text-input-mobile{
+    width: 104px;
+    border: none;
+    outline: none;
+    font-family: plusjakarta;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    display: none;
+  }
+  &__filter-with-pointer {
+    padding: 21px;
+    background: #3563e9;
+    border-radius: 10px;
+  }
+  &__filter-title {
+    font-family: plusjakarta;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+  }
+  &__pick-up-filter-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  &__pick-up-filter-title {
+    font-family: plusjakarta;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+  &__pick-up-filter-section {
+    width: 150px;
+    margin-top: 8px;
+  }
+  &__filter-with-border {
+    border-right: 1px solid #c3d4e966;
+    margin-right: 24px;
+  }
+  &__pick-up-filter-sections {
+    display: flex;
+    margin-top: 16px;
+  }
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 32px 0;
+  }
+  &__first-card-title {
+    font-family: plusjakarta;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: -0.03em;
+    color: white;
+  }
+  &__first-card {
+    background: url(../../assets/images/hero-card-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 24px 97px 10px 24px;
+    border-radius: 10px;
+  }
+  &__card-description {
+    font-family: plusjakarta;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: white;
+  }
+  &__card-btn {
+    padding: 10px 20px;
+    border: 1px solid #3563e9;
+    background-color: #3563e9;
+    border-radius: 4px;
+    font-family: plusjakarta;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: white;
+  }
+  &__first-card-image {
+    margin-left: 137px;
+  }
+  &__second-card {
+    background-image: url(../../assets/images/hero-card-2.png);
+    padding: 24px 113px 20px 24px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+  }
+  &__second-card-title {
+    font-family: plusjakarta;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: -0.03em;
+    color: white;
+  }
+  &__second-card-description {
+    font-family: plusjakarta;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  &__second-card-button {
+    font-family: plusjakarta;
+    padding: 10px 20px;
+    border: 1px solid #54a6ff;
+    background: #54a6ff;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+  }
+  &__second-card-image {
+    margin-left: 187px;
+  }
+  
+}
+
+@media (max-width: 1440px) {
+  .hero {
+    &__second-card {
+      display: none;
+    }
+    &__br-hidden {
+      display: none;
+    }
+    &__first-card-image {
+      margin-left: 53px;
+      width: 196px;
+      height: 56px;
+    }
+    &__first-card-title {
+      font-family: plusjakarta;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: -0.02em;
+    }
+    &__card-description {
+      font-family: plusjakarta;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 19.2px;
+      margin-top: 12px;
+      margin-bottom: 16px;
+    }
+    &__card-btn {
+      font-family: plusjakarta;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 15.12px;
+      letter-spacing: -0.02em;
+      padding: 14px 28px;
+      margin-bottom: 26px;
+    }
+    &__first-card {
+      padding: 16px 71px 4px 16px;
+      background-size: cover;
+      border-radius: 10px;
+    }
+    &__filters {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    &__pick-up-filter {
+      padding: 16px 21px 16px 16px;
+    }
+    &__pick-up-filter-text-input{
+      display: none;
+    }
+    &__pick-up-filter-text-input-mobile{
+      width: 60px;
+      display: block;
+    }
+    &__pick-up-filter-section {
+      width: 76px;
+    }
+    &__filter-with-border {
+      margin-right: 20px;
+      width: 96px;
+    }
+    &__filter-with-pointer {
+      position: absolute;
+      top: 107px;
+      left: 180px;
+    }
+  }
+}

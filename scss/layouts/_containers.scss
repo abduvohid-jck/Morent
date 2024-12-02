@@ -1,0 +1,35 @@
+.container-body {
+  width: 1360px;
+  margin: 0 auto;
+  min-width: 470px;
+}
+
+.header-container {
+  padding: 40px 0;
+  width: 1348px;
+  margin: 0 auto;
+  min-width: 470px;
+}
+.footer-container {
+  width: 1320px;
+  margin: 0 auto;
+  min-width: 470px;
+}
+
+@media (max-width: 1440px) {
+  .header-container {
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .container-body {
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .footer-container {
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}

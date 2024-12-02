@@ -1,0 +1,77 @@
+.recomendation {
+  background: #f6f7f9;
+  padding-bottom: 64px;
+  min-width: 470px;
+  &__wrapper {
+    margin-bottom: 64px;
+    display: grid;
+    grid-template-columns: repeat(4, 295px);
+    gap: 32px;
+    justify-content: space-between;
+  }
+  &__title {
+    font-family: plusjakarta;
+    font-size: 16px;
+    font-weight: 600;
+    color: #90a3bf;
+    padding-top: 10px;
+    margin-bottom: 30px;
+  }
+  &__footer {
+    display: flex;
+    padding-left: 46%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__button {
+    font-family: plusjakarta;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: white;
+    padding: 10px 20px;
+    background: #3563e9;
+    border: 1px solid #3563e9;
+    border-radius: 4px;
+  }
+  &__cars-count {
+    color: #90a3bf;
+    font-family: plusjakarta;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+  &__mobile-block {
+    display: none;
+  }
+}
+
+@media (max-width: 1440px) {
+  .recomendation {
+    &__mobile-card-design {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      gap: 43px;
+    }
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      justify-content: center;
+    }
+    &__mobile-informations {
+      flex-direction: column;
+      align-items: start;
+    }
+    &__card {
+      max-width: 570px;
+      margin: auto;
+    }
+    &__footer {
+        padding-left: 34%;
+      }
+  }
+}
